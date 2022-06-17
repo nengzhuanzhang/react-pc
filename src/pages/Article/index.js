@@ -51,8 +51,8 @@ const Article = () => {
       const res = await http.get("/mp/articles", { params });
       const { results, total_count } = res.data;
       setArticleList({
-        // list: results,
-        list: tableData,
+        list: results,
+        // list: tableData,
         count: total_count,
       });
     }
